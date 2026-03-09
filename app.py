@@ -71,4 +71,4 @@ elif not st.session_state.show_results:
 else:
     # Final: Önce resim, sonra yazı gelecek şekilde düzenlendi
     st.image("intikam.png", use_container_width=True)
-    st.markdown("<h1 style='text-align: center; color: #FF4B4B;'>HEE ÇOK BEKLERSİN! 🤣 AL SANA ANALİZ! 🖕 </h1>", unsafe_allow_html=True)::
+    st.markdown("<h1 style='text-align: center; color: #FF4B4B;'>HEE ÇOK BEKLERSİN! 🤣 AL SANA ANALİZ! 🖕 </h1>", unsafe_allow_html=True)
