@@ -69,6 +69,10 @@ elif not st.session_state.show_results:
     st.rerun()
 
 else:
-    # Final: Önce resim, sonra yazı gelecek şekilde düzenlendi
-    st.image("intikam.png", use_container_width=True)
-    st.markdown("<h1 style='text-align: center; color: #FF4B4B;'>HEE ÇOK BEKLERSİN! 🤣 AL SANA ANALİZ! 🖕 </h1>", unsafe_allow_html=True)
+    # Final: Resim ve yazının sırasını garantiye alıyoruz
+    final_container = st.empty()
+    with final_container.container():
+        st.image("intikam.png", use_container_width=True)
+        # Yazının resimden hemen sonra gelmesi için kısa bir süre bekliyoruz
+        time.sleep(0.5)
+        st.markdown("<h1 style='text-align: center; color: #FF4B4B;'>HEE ÇOK BEKLERSİN! 🤣 AL SANA ANALİZ!🖕 SİE 🤣  </h1>", unsafe_allow_html=True)
